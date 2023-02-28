@@ -7,12 +7,12 @@
 # for name in response['Buckets']:
 #     print(name['Name'])
 #
-### How to delete s3 bucket
+# ## How to delete s3 bucket
 # import boto3
 #
 # client = boto3.client('s3')
 # response = client.delete_bucket(
-#     Bucket='kukon-bucket',
+#     Bucket='kukon-bucket105',
 # )
 #
 # print(response)
