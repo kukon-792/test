@@ -3,11 +3,11 @@ import boto3
 
 client = boto3.client('ec2')
 response = client.run_instances(
-    ImageId='ami-00eeedc4036573771', # from amazon linux
+    ImageId='ami-00eeedc4036573551', # from amazon linux
     InstanceType='t2.micro',
     MinCount=1,
     MaxCount=1,
-    KeyName='devops16'
+    KeyName='CustomVPC'
 )
 print(response)
 for instance in response['Instances']:
