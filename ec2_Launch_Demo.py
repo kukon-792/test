@@ -7,7 +7,7 @@ response = client.run_instances(
     InstanceType='t2.micro',
     MinCount=1,
     MaxCount=1,
-    KeyName='devops16',
+    KeyName='devops16'
 )
 print(response)
 for instance in response['Instances']:
